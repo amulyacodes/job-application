@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ccc;  
+
+}
+.inside-page{
+    max-width: 600px;
+    background-color: white;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius:13px;
+}
+.title-web{
+    font-size: 1.2rem;
+}
+.container{
+    display:flex;
+    justify-content: space-between;
+
+}
+.input-box{
+    width: 16.875rem;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+#text-area{
+    width:100%;
+    height: 100px;
+    margin-top: 5px; 
+    margin-bottom: 20px;
+}
+.apply{
+    text-align:end;
+    margin-top: 20px;
+    
+}
+.label{
+    font-size: 15px;
+}
+
+input,
+select,
+textarea{
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+}
+input:focus, textarea:focus, select:focus{
+    outline-color: red;
+}
+.button{
+    background-color: red;
+    border: transparent solid 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: 0.3s ease-in;
+    
+}
+.button:hover{
+    background-color: grey;
+    border: 2px solid red;
+    color: black;
+    transition: 0.3s ease-out;
+
+}
+
+@media (max-width:630px) {
+    .container{
+        display: block;
+    }
+
+    .input-box{
+        width: 100%;
+    }
+
+    .inside-page{
+        max-width: 80%;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+form{
+    margin-top: 1.5rem;
+}
+
+h1{
+    font-size: 1.6rem;
+}
